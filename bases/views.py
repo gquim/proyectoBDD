@@ -6,4 +6,4 @@ from django.views import generic
 # Herencia de la vista
 class Home(LoginRequiredMixin, generic.TemplateView):
     template_name = 'bases/home.html'
-    login_url='/admin'
+    login_url='bases:login'
